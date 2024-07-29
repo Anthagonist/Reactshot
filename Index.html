@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reactshot</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+
+.navbar {
+    height: 50px;
+    background-color: #000000;
+    font-size: 20px;
+    font-family: "Sometype Mono", monospace;
+    position: static;
+    right:15px;
+    float: right;
+}
+
+header {
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  background-color: #000000;
+  z-index: 100;
+  
+}
+
+.logo {
+  position: relative;
+  top:-5px;
+  height: 40px;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  margin:0;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: #7b00ff;
+}
+
+a:active {
+  color: rgb(0, 213, 255);
+}
+
+a {
+  position: relative;
+  right: 10px;
+  top: 15px;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+#line1 {
+  width: 100%;
+  position: fixed;
+  top: 54px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+  z-index: 100;
+}
+
+
+.images {
+    position:relative;
+    top: 58px;
+    background-image: url(./CSS/8.4\ Web\ Design\ Agency\ Project/assets/images/gauze-01.jpeg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-color: #232323;
+
+}
+
+.picture {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.images img {
+    position: relative;
+    display: flex;
+    top: -12px;
+
+}
+
+.info {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+}
+
+.name {
+    margin: 55px 0px 15px 0px;
+    top: 50px;
+    height: 220px;
+    font-size: 60pt;
+    font-family: doner;
+  }
+
+ .description {
+    margin: 0px 0px 25px 0px;
+    padding: 5px 14px;
+    width: 494px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: 500;
+    color: #000000;
+    font-family: "Sometype Mono", monospace;
+ } 
+
+ .button1 {
+    width: 95px;
+    border-radius: 14px;
+    font-family: "Sometype Mono", monospace;
+    background-color: #111111;
+    padding: 5px 15px;
+    border: 1px solid #3e3e3e;
+ }
+
+ .button1:hover {
+  background-color: #7b00ff;
+  border: 1px solid #2e2e2e;
+}
+
+ .button2 {
+    position: relative;
+    left: 380px;
+    top: -25px;
+    width: 105px;
+    border-radius: 14px;
+    font-family: "Sometype Mono", monospace;
+    background-color: #111111;
+    padding: 5px 15px;
+    border: 1px solid #2e2e2e;
+ }
+
+ .button2:hover {
+  background-color: #7b00ff;
+  border: 1px solid #2e2e2e;
+} 
+#line2 {
+  width: 100%;
+  position: absolute;
+  top: 559px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+}
+
+.skills{
+  width: 100%;
+  position: absolute;
+  top: 564px;
+  height: 680px;
+  background: radial-gradient(ellipse at top, #000000, transparent),
+              radial-gradient(ellipse at bottom, #c40363, transparent);
+}
+
+.skills img {
+  width: 100%;
+}
+
+
+.my-skills {
+    padding-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 100;
+    height: 45px;
+    font-family: "Sometype Mono", monospace;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-image: url(.//CSS/8.4\ Web\ Design\ Agency\ Project/assets/images/gauze-01C.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.tools {
+  position: relative;
+  top: 110px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.tools div {
+  min-width: 250px;
+  height: 427px;
+  margin: 15px;
+  background-color: #090909;
+  border-radius: 5px 5px 0px 0px;
+  border: 1.5px solid #1b1b1b;
+  transition: transform 0.5s;
+}
+
+.tools div:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  background-color: #202020;
+}
+
+h3 {
+  border: 0.3px solid #2f2f2f;
+  color: #ffffff;
+  position: relative;
+  top: -17px;
+  background-color: #460023;
+  font-size: 13pt;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Sometype Mono", monospace;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tools img {
+  position: relative;
+  top: -20px;
+  left: 40%;
+  right: 40%;
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  position: relative;
+  left: 5px;
+  font-family: "Sometype Mono", monospace;
+  font-size: 10pt;
+}
+#line3 {
+  width: 100%;
+  position: absolute;
+  top: 59px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+}
+
+#line4 {
+  width: 100%;
+  position: absolute;
+  top: 115px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+}
+
+#line5 {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+}
+
+#line6 {
+  width: 100%;
+  position: absolute;
+  top: 59px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+}
+
+#line7 {
+  width: 100%;
+  position: absolute;
+  top: 115px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+}
+.showcase {
+  background: radial-gradient(ellipse at top, #000000, transparent),
+  radial-gradient(ellipse at bottom, #350098, transparent);
+  position: absolute;
+  top: 1245px;
+  height: 700px;
+  width: 100%;
+}
+
+.my-work {
+    padding-top: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 22pt;
+    font-weight: 100;
+    height: 45px;
+    font-family: "Sometype Mono", monospace;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-image: url(.//CSS/8.4\ Web\ Design\ Agency\ Project/assets/images/gauze-01C.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.use-cases {
+  position: relative;
+  top: 150px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.use-cases div {
+  min-width: 390px;
+  height: 270px;
+  margin: 15px;
+  background-color: #090909;
+  border: 1.5px solid #1b1b1b;
+  border-radius: 5px 5px 0px 0px;
+  transition: transform 0.5s;
+}
+
+.use-cases div:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  background-color: #7f7f7f;
+}
+
+h2 {
+    position: relative;
+    top: -15px;
+    padding: 15px 0px 15px 0px;
+    border: 1.5px solid #2f2f2f;
+    color: #ffffff;
+    background-color: #341951;
+    font-size: 13pt;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Sometype Mono", monospace;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.davinci iframe {
+  position: relative;
+  top: -20px;
+  border: none;
+  
+}
+
+.blender iframe {
+  position: relative;
+  top: -20px;
+  border: none;
+}
+
+.figma iframe {
+  position: relative;
+  top: -20px;
+  border: none;
+}
+
+footer {
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  top: 610px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#line8 {
+  width: 100%;
+  position: absolute;
+  top: 608px;
+  height: 1px;
+  background-color: #7b00ff;
+  background-image: linear-gradient(to right, rgb(255, 0, 72) , rgb(255, 255, 255) , rgb(136, 0, 255));
+}
+
+h4 {
+  font-family: doner;
+  letter-spacing: .5px;
+}
+
+body {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+      <a href="./Index.html">
+        <img class="logo" src=".//CSS/8.4 Web Design Agency Project/assets/images/Logo 2.png" alt="logo">
+      </a>
+          <div class="navbar">
+            <a href="./Index.html">ENG</a>
+            <a href="./Reactshot esp.html">ESP</a>
+          </div>
+    </header>
+    <div id="line1"></div>
+    <div class="images">
+        <div class="picture">
+            <img class="me" src="./CSS/8.4 Web Design Agency Project/assets/images/Me B.png">
+        </div>
+        <div class="info">
+            <div class="name">
+                MARCO
+                <br/>
+                VILLAMIZAR
+            </div>
+            <div class="description">
+                HI THERE! I'M A VIDEO EDITOR & DIGITAL DESIGNER
+            </div>
+                <div class="button1" alt="contact" onclick="window.open('https://www.instagram.com/iantagonista?igsh=ZjV0a2I1Mjc0ZjQ%3D&utm_source=qr', '_blank')">Let's talk</div>
+                <div class="button2" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/villamizarf/', '_blank')">My linkedIn</div>
+        </div>
+        </div>  
+    </div>
+    <div id="line2"></div>
+        <div class="skills">
+            <div id="line3"></div> 
+            <div class="my-skills"> My Skills</div>
+            <div id="line4"></div> 
+            <div class="tools">
+            <div class="davinci">
+                <h3>Davinci Resolve
+                <br/>Advanced Certified
+                </h3>
+            </br>
+                <img src=".//CSS/8.4 Web Design Agency Project/assets/images//icons8-davinci-resolver-144.png">
+                <p>· Motion graphic design</p>
+                <p>· Video edition </p>
+                <p>· Sound engineering</p>
+                <p>· 3D modeling</p>
+                <p>· Screen mastering</p>
+                <p>· Color grading</p>
+                </div>
+            <div class="figma">
+                <h3>Figma
+                <br/>Advanced Certified
+                </h3>
+            </br>
+                <img src=".//CSS/8.4 Web Design Agency Project/assets/images//icons8-figura-144.png">
+                <p>· Branding design</p>
+                <p>· Responsive design </p>
+                <p>· 2D Animation</p>
+                <p>· Web and app prototyping</p>
+                <p>· Web and app design</p>
+                <p>· UX/UI design certified</p>
+            </div>
+            <div class="blender">
+                <h3>Blender
+                <br/>Certified
+                </h3>
+            </br>
+                <img src=".//CSS/8.4 Web Design Agency Project/assets/images//icons8-blender-3d-144.png"></img>      
+                <p>· Rendering</p>
+                <p>· Lighting atmosphere </p>
+                <p>· Rigging animation</p>
+                <p>· Low poly 3D modeling</p>
+                <p>· Characters creation</p>
+                <p>· Environment creation</p>
+            </div>
+            <div class="visual-studio">
+                <h3>Web Full Stack
+                <br/>In Progress
+                </h3>
+            </br>
+                <img src=".//CSS/8.4 Web Design Agency Project/assets/images//icons8-visual-studio-code-2019-144.png">
+                <p>· HTML intermediate</p>
+                <p>· CSS advanced </p>
+                <p>· Flexbox, grid & bootstrap</p>
+                <p>· JavaScript advanced</p>
+                <p>· Backend </p>
+                <p>· Node.Js, express.Js, react.Js</p>
+                <p>· SQL, postgreSQL</p>
+                <p>· Frontend</p>
+            </div>
+        </div>
+        </div>
+
+<div class="showcase">
+    <div id="line5"></div> 
+    <div class="my-work">My work</div>
+    <div id="line6"></div> 
+    <div id="line7"></div> 
+                <div class ="use-cases">
+                    <div class="davinci">
+                        <h2>Davinci Resolve
+                        </h2>
+                        <iframe
+                        width="100%"
+                        height="200"
+                        src="https://www.youtube.com/embed/sDjQeeg22Go?si=sSC-aiHtTd1Z75ZR"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                        </iframe>
+                    </div>
+                    <div class="figma">
+                        <h2>Figma
+                        </h2>
+                        <iframe
+                        width="100%"
+                        height="200"
+                        src="https://www.youtube.com/embed/zI0qv5IRWf8?si=caO2Ei0yu_xI_SoY" 
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="blender">
+                        <h2>Blender
+                        </h2>
+                        <iframe
+                        width="100%"
+                        height="200"
+                        src="https://www.youtube.com/embed/NvgZyHAKi7Q?si=_viZ1nQNuU4TOS0a"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                        </iframe>
+                </div>
+            </div>
+</body>
+<div id="line8"></div> 
+<footer>
+    <h4>Reactshot 2024 portfolio designed by: Marco Villamizar<br>
+    <a href="mailto:villamizarf.marco@gmail.com">Send me an email</a></h4>
+</footer>
+</html>
